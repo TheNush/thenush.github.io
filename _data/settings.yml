@@ -10,7 +10,7 @@ menu:
 - {name: 'About',   url: 'about.html'}
 - {name: 'Blog', url: 'blog.html'}
 - {name: 'CV', url: 'cv.html'}
-<a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/TheNush/thenush.github.io/gh-pages/assets/docs/drg_cv.pdf">Contact</a>
+- {name: 'Contact', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
