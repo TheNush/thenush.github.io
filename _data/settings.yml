@@ -13,7 +13,7 @@ menu:
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-- {icon: 'google-scholar',    link: 'https://scholar.google.com/citations?user=H5bXsboAAAAJ&hl=en'}
+- {icon: 'google',    link: 'https://scholar.google.com/citations?user=H5bXsboAAAAJ&hl=en'}
 - {icon: 'github',     link: 'https://www.github.com/TheNush'}
 - {icon: 'twitter',    link: 'https://twitter.com/TheNush07'}
 - {icon: 'linkedin',   link: 'http://www.linkedin.com/in/dhanush-giriyan-182857171/'}
