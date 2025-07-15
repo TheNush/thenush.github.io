@@ -17,15 +17,15 @@ mere mud and tree roots but rather stones and loose rocks thus requiring us to b
 on their way back down. At each instance, I could feel my heart drop at the thought of something similar or worse happening to me or someone else in our group. I remember telling myself to 
 stay focused on the present -- "One step at a time.", recalling some advise from one of the more experienced hikers in our group. 
 Soon, my friend and me caught up to the rest of the gang (they had overtaken us despite our headstart) who were taking a break. At this "pit stop" I made sure to put on my hoodie as it was getting 
-quite windy and did not want to catch a cold. We had received frequent encouragement from those descending the mountain, telling us that we were "nearly there". It was interesting how the kindness 
-people often shines when we all aspire for similar things. Going to back what I was saying in [part #01](https://thenush.github.io/Mt-Humphrey-01), while each of us have our own respective battles 
+quite windy and did not want to catch a cold. We had received frequent encouragement from those descending the mountain, telling us that we were "nearly there". It was interesting how the kindness of 
+people often shines when we all aspire for similar things in a somewhat non-competitive environment. Going to back what I was saying in [part #01](https://thenush.github.io/Mt-Humphrey-01), while each of us have our own respective battles 
 to fight, every now and then a sense of comraderie develops among us, compelling us to support and motivate those around us. Perhaps we humans enjoy this feeling of "togetherness" -- seeing others
 attempt something that is seemingly identical to one's own endeavors validates the individualism within us to some extend. We each would love to go off on our own, following our own internal compass, 
 without a care in the world for the resulting consequences. However, the going gets tough, every person following their isolated individualistic approach to life is inevitably faced with the dreaded
-question -- "Why?". That sole question is potentially the biggest source of doubt of an individual. If one does not have an immediate answer ready for oneself, then they begin questioning their every
-decision, thus, falling prey to anxiety, stress, and self-doubt in the near future. "Why?". When this question arises, if one is lucky, they are given the opportunity to interact with another being
-who just so happens to speak the exact words this person needs to hear. Sometimes they give you the perfect answer to this question, an answer you know yourself already, but they articulate it so 
-well that it resonates with your mind. Hearing something you already know but articulated in a manner that really drives the point home is a beautiful and powerful thing. However, in my experience, 
+question -- "Why?". That sole question is potentially the biggest source of doubt in an individual. If one does not have an immediate answer ready for oneself, then they begin questioning their every
+decision, thus, spiralling into anxiety, stress, and self-doubt in the near future. "Why?". When this question arises, if one is lucky, they are given the opportunity to interact with another being
+who just so happens to speak the exact words this person needs to hear. Sometimes they give you the perfect answer to this question; an answer you know yourself already, but articulated so 
+well that it resonates with your mind. Hearing something you already know but put in a way that really drives the point home is a beautiful and powerful thing. However, in my experience, 
 another, and more common way that interactions with others can help with the question of "Why?" is when they help redirect your attention away from the question itself. After such interactions you 
 often begin to believe that the answer to the question is not important in this instant. While you can never truly run away from this question without answering it, this kind of interaction with 
 others can be an important lifeline in the context of whatever it is that you are aiming for. In my case, the hikers around providing encouragement and hope that we were "nearly there" and that the 
