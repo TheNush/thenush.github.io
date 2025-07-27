@@ -32,9 +32,7 @@ another, and more common way that interactions with others can help with the que
 often begin to believe that the answer to the question is not important in this instant. While you can never truly run away from this question without answering it, this kind of interaction with
 others can be an important lifeline in the context of achieving whatever it is that you are aiming for. 
 In my case, the hikers passing by provided much-needed encouragement and hope that we were "nearly there"
-and that the view at the top was "totally worth it" really did boost morale at times and kept me going.
-
-Throughout this last bit, we kept our pace very much in control as we had planned two-plus miles ago. Somehow, the altitude was not affecting me as much at this point, and I have to say, I was relieved.
+and that the view at the top was "totally worth it" really did boost morale at times and kept me going.Throughout this last bit, we kept our pace very much in control as we had planned two-plus miles ago. Somehow, the altitude was not affecting me as much at this point, and I have to say, I was relieved.
 I stopped here and there to take in the fantastic view from up here, but yet again, I made sure not to dwell on it too much -- I wanted to experience it all from the summit. Speaking of which,
 it seemed to be about 15-20 minutes away. 
 The relief that came with that realization was unbounded, and I instantly sped up to get there out of eagerness. 
