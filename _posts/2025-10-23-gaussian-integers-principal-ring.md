@@ -25,8 +25,8 @@ $$
 
 $$
 \begin{align*}
-a\cdot (b+c) &= a\cdot b + a\cdot c \text{(left distributivity)}\\
-(a+b)\cdot c &= a\cdot c + a\cdot c \text{(right distributivity)}
+a\cdot (b+c) &= a\cdot b + a\cdot c \quad \text{(left distributivity)}\\
+(a+b)\cdot c &= a\cdot c + a\cdot c \quad \text{(right distributivity)}
 \end{align*}
 $$
 
