@@ -12,9 +12,13 @@ A ring is a set $R$ equipped with two binary operations, denoted by $+$ and $\cd
 - $(R,+)$ is an abelian additive group
 - $R$ contains a unit element denoted by $1$, i.e., for every $x \in R$, $1\cdot x=x\cdot 1 = x$
 - Multiplication satisfies associativity:
-$$a\cdot (b \cdot c) = (a\cdot b)\cdot c$$
+\begin{align*}
+a\cdot (b \cdot c) = (a\cdot b)\cdot c
+\end{align*}
 - Multiplication distributes over addition in the usual sense:
-$$\[a\cdot (b+c) = a\cdot b + a\cdot c\]$$
+\begin{align*}
+a\cdot (b+c) = a\cdot b + a\cdot c
+\end{align*}
 
 
 
