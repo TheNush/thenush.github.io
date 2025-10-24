@@ -6,7 +6,7 @@ categories: "journal"
 tags:   [Life]
 image: mt-humphreys.jpeg
 ---
-Link to [part #02](https://thenush.github.io/Mt-Humphrey-02). 
+Link to [part #02](https://thenush.github.io/Mt-Humphreys-02). 
 
 The constant cold wind had my nose running. My quads were beginning to burn from steeper elevation and larger rocks. My lungs were hanging in there thanks to my slower pace. 
 My heart was drowning in misery as I had just passed the second false peak. I'm sure the rest of my body was feeling this "extra weight". 
