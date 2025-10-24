@@ -18,6 +18,7 @@ $$
 a\cdot (b \cdot c) = (a\cdot b)\cdot c
 \end{align*}
 $$
+
 - Multiplication distributes over addition in the usual sense:
 
 $$
