@@ -7,7 +7,6 @@ tags:   [ring-theory, geometry]
 ---
 
 ### Preliminary Definitions
-
 We begin with preliminary definitions for completeness. 
 
 **Definition 1.** A *ring* is a set $R$ equipped with two binary operations, denoted by $+$ and $\cdot$, such that
@@ -44,3 +43,5 @@ In other words, $I$ is a subgroup of $(R,+)$ and is closed under multiplication 
 An ideal is said to be *principal* if it can be expressed in the form of $xR=Rx$ for some $x \in R$. 
 
 Finally, a ring wherein every ideal of the ring is principal is referred to as a *principal ring*. 
+
+---WORK IN PROGRESS---
