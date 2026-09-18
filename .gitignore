@@ -5,3 +5,6 @@ Gemfile.lock
 .jekyll-metadata
 .DS_Store
 .jekyll-cache
+
+# Blog drafts 
+_posts/2025-10-23-gaussian-integers-principal-ring.md
