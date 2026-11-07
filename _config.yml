@@ -20,10 +20,15 @@ permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'Dhanush R Giriyan'
-#description:	       ''
-author:              'TheNush'
+title:               'Dhanush R. Giriyan'
+tagline:             'Computer Science PhD Student'
+description:         'Computer Science PhD student at Arizona State University. Research in stochastic processes and distributed computing.'
+author:              'Dhanush R. Giriyan'
+url:                 'https://thenush.github.io'
+baseurl:             ''
+lang:                'en'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
+

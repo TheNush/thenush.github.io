@@ -1,0 +1,18 @@
+# Published papers only, in reverse chronological order. Use public links and confirmed venues.
+- title: "Distributed Online Rollout for Multivehicle Routing in Unmapped Environments"
+  authors: "Jamison W. Weber, <strong>Dhanush R. Giriyan</strong>, Devendra R. Parkar, Dimitri P. Bertsekas, and Andréa W. Richa"
+  venue: "AAMAS"
+  year: 2024
+  description: "Decentralized planning for agents with local sensing and communication, using coordinated exploration and rollout to complete tasks in unknown environments."
+  paper_url: "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1910.pdf"
+  preprint_url: "https://arxiv.org/abs/2305.15596"
+  bibtex: |
+    @inproceedings{weber2024distributed,
+      title = {Distributed Online Rollout for Multivehicle Routing in Unmapped Environments},
+      author = {Weber, Jamison W. and Giriyan, Dhanush R. and Parkar, Devendra R.
+                and Bertsekas, Dimitri P. and Richa, Andr{\'e}a W.},
+      booktitle = {Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems},
+      year = {2024},
+      pages = {1910--1918},
+      url = {https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1910.pdf}
+    }

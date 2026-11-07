@@ -1,55 +1,98 @@
 ---
 layout: default
 ---
-<img style="float: left; margin-right: 1.5em;" src="{{ site.github.url }}/assets/img/drg.jpeg" alt="drawing" width="200"/>
-
-I am a Computer Science Ph.D. student at the <a href="https://scai.engineering.asu.edu" target="_blank">School of Computing and Augmented Intelligence</a> at Arizona State University, where I am fortunate to be advised by <a href="https://search.asu.edu/profile/198256" target="_blank">Prof. Andréa Richa</a>. 
-
-My research lies in the intersection of stochastic processes and distributed computing. 
-
-In my free time, I enjoy reading, gaming, and traveling. 
-<h3>Latest Updates:</h3>
-<ul>
-    <li>September 14th to 16th, 2026 - Attened workshop on <em>Algorithmic Foundations for Emergent Computing Technologies</em> at the Simons Institute for Computing, Berkeley.</li>
-    <li>July 1st to 3rd, 2026 - Attended <em>Symposium on Algorithmic Foundations of Dynamic Networks (SAND) 2026</em> in Le Havre, France.</li>
-    <li>June 1st to Aug 15th, 2026 - Visiting Researcher at <em>University of Hamburg</em>. Worked with <a href="https://www.inf.uni-hamburg.de/inst/ab/art/people/berenbrink.html">Prof. Petra Berenbrink</a>.</li>
-    <li>June 1st to 5th, 2026 - Attended <em>Algorithms, Dynamics and Information Flow in Networks (ADYN)</em> Summer school at Möhnesse, Germany.</li>
-    <li>December 10th to 12th, 2025 - Volunteer at <em>Learning on Graphs 2025</em> at Arizona State University, West, AZ.</li>
-    <li>June 16th to 21st, 2025 - Attending workshop on <em>Stochastic Thermodynamics and Computation Theory - II</em> at the Santa Fe Institute, NM. </li>
-
-</ul>
-
-</article>
-<!--
-{% for post in paginator.posts %}
-  <div class="posts-container">
-    <h1>
-      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-    </h1>
-    {% if post.image %}
-      <div class="thumbnail-container">
-        <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
-      </div>
-    {% endif %}
-    <p>
-      {{ post.content | strip_html | truncate: 350 }} <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
-      <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>
-    </p>
+<section class="profile" aria-labelledby="profile-name">
+  <div class="profile-copy">
+    <p class="eyebrow">Computer Science &middot; PhD Student</p>
+    <h1 id="profile-name">Dhanush R. Giriyan</h1>
+    <p class="affiliation">Arizona State University</p>
+    <p class="introduction">I study stochastic processes and distributed computing: how local interactions give rise to global behavior.</p>
+    <p>I am a PhD student in the <a href="https://scai.engineering.asu.edu/">School of Computing and Augmented Intelligence</a> at Arizona State University, advised by <a href="https://search.asu.edu/profile/198256">Andr&eacute;a Richa</a>.</p>
+    <nav class="profile-links" aria-label="Research and contact">
+      <a class="cv-link" href="{{ '/assets/docs/drg_cv.pdf' | relative_url }}">Curriculum vitae <span class="file-type">PDF</span></a>
+      <a href="https://scholar.google.com/citations?user=H5bXsboAAAAJ&amp;hl=en">Google Scholar</a>
+      <a href="mailto:dgiriyan@asu.edu">Email</a>
+    </nav>
   </div>
-{% endfor %}
--->
-<!-- Pagination links -->
-<!--
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>
-  {% else %}
-    <span class="pagination-button">{{ site.data.settings.pagination.previous_page }}</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
-  {% else %}
-    <span class="pagination-button">{{ site.data.settings.pagination.next_page }}</span>
-  {% endif %}
-</div>
--->
+  <figure class="profile-photo">
+    <div class="photo-frame">
+      <img src="{{ '/assets/img/drg.jpeg' | relative_url }}" alt="Dhanush R. Giriyan" width="220" height="260" fetchpriority="high">
+    </div>
+    <figcaption>Tempe, Arizona</figcaption>
+  </figure>
+</section>
+
+<section class="academic-section" id="research" aria-labelledby="research-heading">
+  <div class="section-heading">
+    <h2 id="research-heading">Research</h2>
+  </div>
+  <div class="section-body">
+    <p>My research lies at the intersection of stochastic processes and distributed computing. I am interested in understanding how systems of interacting agents coordinate and how their behavior evolves over time.</p>
+    <p>My published work includes decentralized algorithms for agents that explore and complete tasks in unknown environments.</p>
+    <p class="research-areas">Stochastic processes <span aria-hidden="true">&middot;</span> Distributed algorithms <span aria-hidden="true">&middot;</span> Multi-agent systems</p>
+  </div>
+</section>
+
+<section class="academic-section" id="publications" aria-labelledby="publications-heading">
+  <div class="section-heading">
+    <h2 id="publications-heading">Publications</h2>
+    <a class="section-aside" href="https://scholar.google.com/citations?user=H5bXsboAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">&nearr;</span></a>
+  </div>
+  <div class="section-body publication-list">
+    {% for publication in site.data.publications %}
+    <article class="publication">
+      <p class="publication-venue">{{ publication.venue }} <span aria-hidden="true">&middot;</span> {{ publication.year }}</p>
+      <h3><a href="{{ publication.paper_url }}">{{ publication.title }}</a></h3>
+      <p class="publication-authors">{{ publication.authors }}</p>
+      <p class="publication-description">{{ publication.description }}</p>
+      <div class="publication-links">
+        <a href="{{ publication.paper_url }}">Paper <span class="file-type">PDF</span></a>
+        <a href="{{ publication.preprint_url }}">arXiv</a>
+      </div>
+      <details class="citation">
+        <summary>BibTeX</summary>
+        <pre><code>{{ publication.bibtex | escape }}</code></pre>
+      </details>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="academic-section" id="updates" aria-labelledby="updates-heading">
+  <div class="section-heading">
+    <h2 id="updates-heading">Updates</h2>
+  </div>
+  <div class="section-body">
+    <ul class="updates-list">
+      {% for update in site.data.updates limit:4 %}
+      <li>
+        <time datetime="{{ update.date }}">{{ update.period }}</time>
+        <div>{{ update.description }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% if site.data.updates.size > 4 %}
+    <details class="earlier-updates">
+      <summary>Earlier updates</summary>
+      <ul class="updates-list">
+        {% for update in site.data.updates offset:4 %}
+        <li>
+          <time datetime="{{ update.date }}">{{ update.period }}</time>
+          <div>{{ update.description }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+    {% endif %}
+  </div>
+</section>
+
+<section class="academic-section personal-section" aria-labelledby="personal-heading">
+  <div class="section-heading">
+    <h2 id="personal-heading">Beyond research</h2>
+  </div>
+  <div class="section-body">
+    <p>I enjoy reading, gaming, and traveling. You can find some of my writing on the <a href="{{ '/blog' | relative_url }}">blog</a>.</p>
+  </div>
+</section>
+

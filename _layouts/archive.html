@@ -1,25 +1,28 @@
 ---
 layout: default
 ---
-
-<h1>
-  {{ page.title }}
-</h1>
-
-<ul class="posts-container">
-  {% for post in site.posts %}
-    {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
-      {% endif %}
-    {% endunless %}
-    <li itemscope>
-      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-      <p class="post-date"><span><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %-d" }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span></p>
-    </li>
+<div class="blog-archive" aria-labelledby="blog-title">
+  <header class="page-heading">
+    <p class="eyebrow">Beyond research</p>
+    <h1 id="blog-title">{{ page.title }}</h1>
+    <p class="archive-intro">{{ page.description | escape }}</p>
+  </header>
+  {% assign post_years = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}
+  {% for year in post_years %}
+  <section class="academic-section archive-group" aria-labelledby="blog-year-{{ year.name }}">
+    <div class="section-heading">
+      <h2 id="blog-year-{{ year.name }}">{{ year.name }}</h2>
+    </div>
+    <ul class="post-list section-body">
+      {% for post in year.items %}
+      <li>
+        <time class="post-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 32 }}</p>
+        <a class="read-post" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">Read post <span aria-hidden="true">&rarr;</span></a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
   {% endfor %}
-</ul>
+</div>

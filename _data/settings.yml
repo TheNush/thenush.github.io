@@ -7,17 +7,18 @@ disqus:
 google-ID: 'UA-112060364-1'
 
 menu:
-- {name: 'About',   url: 'about.html'}
-- {name: 'Blog', url: 'blog.html'}
-- {name: 'Contact', url: 'contact.html'}
+- {name: 'Research', url: '/#research'}
+- {name: 'Publications', url: '/#publications'}
+- {name: 'Updates', url: '/#updates'}
+- {name: 'Blog', url: '/blog'}
 
-# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+# Public profile and contact links, displayed as readable text.
 social:
-- {icon: 'google',    link: 'https://scholar.google.com/citations?user=H5bXsboAAAAJ&hl=en'}
-- {icon: 'github',     link: 'https://www.github.com/TheNush'}
-- {icon: 'twitter',    link: 'https://twitter.com/TheNush07'}
-- {icon: 'linkedin',   link: 'http://www.linkedin.com/in/dhanush-giriyan-182857171/'}
-- {icon: 'envelope',   link: 'mailto:dhanush.giriyan@gmail.com'}
+- {icon: 'google', label: 'Google Scholar', link: 'https://scholar.google.com/citations?user=H5bXsboAAAAJ&hl=en'}
+- {icon: 'github', label: 'GitHub', link: 'https://github.com/TheNush'}
+- {icon: 'twitter', label: 'Twitter', link: 'https://twitter.com/TheNush07'}
+- {icon: 'linkedin', label: 'LinkedIn', link: 'https://www.linkedin.com/in/dhanush-giriyan-182857171/'}
+- {icon: 'envelope', label: 'Email', link: 'mailto:dgiriyan@asu.edu'}
 # - {icon: 'rss-square', link: '/feed.xml'}
 # - {icon: 'rss-square', link: '/rss-feed.xml'}
 
@@ -31,3 +32,4 @@ sharing_button_prompt: 'Feel free to share!'
 related_posts: 'You may also enjoy:'
 
 post_date_prefix: 'Written on'
+
