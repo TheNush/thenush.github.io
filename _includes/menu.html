@@ -1,7 +1,6 @@
 <nav class="menu-content" aria-label="Main navigation">
   {% for item in site.data.settings.menu %}
-  <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.name }}</a>
+  <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}{% if item.url == '/blog' %}{% if page.layout == 'post' %} aria-current="location"{% endif %}{% endif %}>{{ item.name }}</a>
   {% endfor %}
   <a class="nav-cv" href="{{ '/assets/docs/drg_cv.pdf' | relative_url }}">CV <span class="file-type">PDF</span></a>
 </nav>
-

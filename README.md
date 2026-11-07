@@ -7,6 +7,9 @@ Personal academic website at [thenush.github.io](https://thenush.github.io), bui
 | Content | File |
 | --- | --- |
 | Bio, research introduction, and homepage layout | `_layouts/home.html` |
+| Blog index and year groups | `_layouts/archive.html` |
+| Individual blog posts | `_layouts/post.html` |
+| Blog title and description | `menu/blog.md` |
 | Publications, paper links, and BibTeX | `_data/publications.yml` |
 | Recent visits and news, newest first | `_data/updates.yml` |
 | Navigation and profile links | `_data/settings.yml` |

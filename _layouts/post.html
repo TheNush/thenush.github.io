@@ -1,18 +1,29 @@
 ---
 layout: default
 ---
-<article class="prose">
-  <a class="back-link" href="{{ '/blog' | relative_url }}">&larr; Back to blog</a>
-  <h1>{{ page.title }}</h1>
-  {% if site.hide_post_date != true %}
-  <p class="post-date">{% include post-date.html %}</p>
-  {% endif %}
+<article class="post-page" aria-labelledby="post-title">
+  <header class="post-heading">
+    <a class="back-link" href="{{ '/blog' | relative_url }}">&larr; Back to blog</a>
+    <p class="eyebrow">Blog</p>
+    <h1 id="post-title">{{ page.title }}</h1>
+    {% if site.hide_post_date != true %}
+    <p class="post-meta">
+      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+      <span aria-hidden="true">&middot;</span>
+      <span>{{ page.author | default: site.author }}</span>
+    </p>
+    {% endif %}
+  </header>
   {% if page.image %}
-  <img class="post-hero" src="{{ '/assets/img/' | append: page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+  <img class="post-hero" src="{{ '/assets/img/' | append: page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}" decoding="async">
   {% endif %}
-  {{ content }}
+  <div class="prose post-body">
+    {{ content }}
+  </div>
   {% if site.hide_post_share != true %}
-  {% include social-sharing.html %}
+  <footer class="post-footer">
+    {% include social-sharing.html %}
+  </footer>
   {% endif %}
 </article>
 {% if site.hide_related_posts != true %}
@@ -21,4 +32,3 @@ layout: default
 {% if site.data.settings.disqus.comments %}
   {% include disqus.html %}
 {% endif %}
-
