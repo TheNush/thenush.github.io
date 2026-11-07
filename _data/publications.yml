@@ -1,4 +1,4 @@
-# Add publications in reverse chronological order. Use public links and confirmed venues.
+# Published papers only, in reverse chronological order. Use public links and confirmed venues.
 - title: "Distributed Online Rollout for Multivehicle Routing in Unmapped Environments"
   authors: "Jamison W. Weber, <strong>Dhanush R. Giriyan</strong>, Devendra R. Parkar, Dimitri P. Bertsekas, and Andréa W. Richa"
   venue: "AAMAS"

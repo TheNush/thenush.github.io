@@ -17,6 +17,8 @@ Personal academic website at [thenush.github.io](https://thenush.github.io), bui
 
 The homepage shows the four most recent updates. The remaining entries are available under **Earlier updates**. Publications and news are data files so routine additions do not require editing the page layout.
 
+List published papers only. An arXiv link may point to a public version of an already published paper.
+
 To add a post, create `_posts/YYYY-MM-DD-post-title.md` with YAML front matter:
 
 ```yaml
