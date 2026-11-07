@@ -1,11 +1,7 @@
-<div class="menu">
-  <nav class="menu-content">
-    {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
-    {% endfor %}
-      <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/TheNush/thenush.github.io/gh-pages/assets/docs/drg_cv.pdf" target="_blank">CV</a>
-  </nav>
-  <nav class="social-icons">
-    {% include social-icons.html %}
-  </nav>
-</div>
+<nav class="menu-content" aria-label="Main navigation">
+  {% for item in site.data.settings.menu %}
+  <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+  <a class="nav-cv" href="{{ '/assets/docs/drg_cv.pdf' | relative_url }}">CV <span class="file-type">PDF</span></a>
+</nav>
+

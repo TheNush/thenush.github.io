@@ -1,25 +1,24 @@
 ---
 layout: default
 ---
-
-<h1>
-  {{ page.title }}
-</h1>
-{% if page.image %}
-  <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
-{% endif %}
-<article>
+<article class="prose">
+  <a class="back-link" href="{{ '/blog' | relative_url }}">&larr; Back to blog</a>
+  <h1>{{ page.title }}</h1>
+  {% if site.hide_post_date != true %}
+  <p class="post-date">{% include post-date.html %}</p>
+  {% endif %}
+  {% if page.image %}
+  <img class="post-hero" src="{{ '/assets/img/' | append: page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+  {% endif %}
   {{ content }}
-</article>
-{% if site.hide_post_date != true %}
-  {% include post-date.html %}
-{% endif %}
-{% if site.hide_post_share != true %}
+  {% if site.hide_post_share != true %}
   {% include social-sharing.html %}
-{% endif %}
+  {% endif %}
+</article>
 {% if site.hide_related_posts != true %}
   {% include related-posts.html %}
 {% endif %}
 {% if site.data.settings.disqus.comments %}
   {% include disqus.html %}
 {% endif %}
+
