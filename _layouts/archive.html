@@ -3,11 +3,21 @@ layout: default
 ---
 <div class="blog-archive" aria-labelledby="blog-title">
   <header class="page-heading">
-    <p class="eyebrow">Beyond research</p>
+    <p class="eyebrow">Writing</p>
     <h1 id="blog-title">{{ page.title }}</h1>
     <p class="archive-intro">{{ page.description | escape }}</p>
+    <nav class="blog-categories" aria-label="Blog categories">
+      <a href="{{ '/blog' | relative_url }}"{% unless page.blog_category %} aria-current="page"{% endunless %}>All posts</a>
+      <a href="{{ '/blog/personal/' | relative_url }}"{% if page.blog_category == 'personal' %} aria-current="page"{% endif %}>Personal</a>
+      <a href="{{ '/blog/technical/' | relative_url }}"{% if page.blog_category == 'technical' %} aria-current="page"{% endif %}>Technical</a>
+    </nav>
   </header>
-  {% assign post_years = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}
+  {% assign archive_posts = site.posts %}
+  {% if page.blog_category %}
+    {% assign archive_posts = site.categories[page.blog_category] %}
+  {% endif %}
+  {% if archive_posts.size > 0 %}
+  {% assign post_years = archive_posts | group_by_exp: 'post', "post.date | date: '%Y'" %}
   {% for year in post_years %}
   <section class="academic-section archive-group" aria-labelledby="blog-year-{{ year.name }}">
     <div class="section-heading">
@@ -16,7 +26,10 @@ layout: default
     <ul class="post-list section-body">
       {% for post in year.items %}
       <li>
-        <time class="post-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+        <div class="post-entry-meta">
+          <time class="post-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+          {% include blog-labels.html post=post %}
+        </div>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <p>{{ post.excerpt | strip_html | truncatewords: 32 }}</p>
         <a class="read-post" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">Read post <span aria-hidden="true">&rarr;</span></a>
@@ -25,4 +38,7 @@ layout: default
     </ul>
   </section>
   {% endfor %}
+  {% else %}
+  <p class="empty-posts">No posts in this category yet.</p>
+  {% endif %}
 </div>
