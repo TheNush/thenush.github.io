@@ -1,0 +1,6 @@
+{% if include.post.categories contains 'personal' %}
+<a class="post-label" href="{{ '/blog/personal/' | relative_url }}">Personal</a>
+{% endif %}
+{% if include.post.categories contains 'technical' %}
+<a class="post-label" href="{{ '/blog/technical/' | relative_url }}">Technical</a>
+{% endif %}

@@ -10,6 +10,8 @@ Personal academic website at [thenush.github.io](https://thenush.github.io), bui
 | Blog index and year groups | `_layouts/archive.html` |
 | Individual blog posts | `_layouts/post.html` |
 | Blog title and description | `menu/blog.md` |
+| Personal and Technical category pages | `menu/blog-personal.md`, `menu/blog-technical.md` |
+| Post labels | `_includes/blog-labels.html` |
 | Publications, paper links, and BibTeX | `_data/publications.yml` |
 | Recent visits and news, newest first | `_data/updates.yml` |
 | Navigation and profile links | `_data/settings.yml` |
@@ -29,9 +31,12 @@ To add a post, create `_posts/YYYY-MM-DD-post-title.md` with YAML front matter:
 layout: post
 title: "Post title"
 author: "Dhanush R. Giriyan"
-tags: [Life]
+categories: [technical]
+tags: [Probability]
 ---
 ```
+
+Use `categories: [personal]` for personal writing and `categories: [technical]` for technical posts. Labels appear on the blog index and post header, and the category pages list matching posts automatically. An optional `excerpt` in the front matter controls the index summary.
 
 Add `math: true` to a page or post to enable MathJax. Blog posts remain at their existing URLs. The About and Contact pages are also retained at `/about` and `/contact`.
 
@@ -51,4 +56,3 @@ GitHub Pages publishes the `gh-pages` branch. Review changes on a separate branc
 ## Credits
 
 The site began with [Lagrange](https://github.com/LeNPaul/Lagrange), a Jekyll theme by Paul Le. Its MIT license is preserved in `LICENSE.md`.
-

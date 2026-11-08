@@ -2,7 +2,7 @@
 layout: post
 title: "Summiting Mt. Humphreys #2"
 author: "Dhanush Giriyan"
-categories: "journal"
+categories: [personal]
 tags:   [Life]
 image: mt-humphreys.jpeg
 ---

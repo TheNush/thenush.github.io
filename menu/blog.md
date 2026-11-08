@@ -1,6 +1,6 @@
 ---
 layout: archive
 title: Blog
-description: Notes on travel, life, and things I find interesting.
+description: Personal writing and technical notes.
 permalink: /blog
 ---

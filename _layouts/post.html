@@ -6,13 +6,14 @@ layout: default
     <a class="back-link" href="{{ '/blog' | relative_url }}">&larr; Back to blog</a>
     <p class="eyebrow">Blog</p>
     <h1 id="post-title">{{ page.title }}</h1>
-    {% if site.hide_post_date != true %}
     <p class="post-meta">
+      {% if site.hide_post_date != true %}
       <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
       <span aria-hidden="true">&middot;</span>
       <span>{{ page.author | default: site.author }}</span>
+      {% endif %}
+      {% include blog-labels.html post=page %}
     </p>
-    {% endif %}
   </header>
   {% if page.image %}
   <img class="post-hero" src="{{ '/assets/img/' | append: page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}" decoding="async">
